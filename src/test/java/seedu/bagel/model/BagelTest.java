@@ -18,6 +18,7 @@ import org.junit.jupiter.api.Test;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import seedu.bagel.model.flashcard.Flashcard;
+import seedu.bagel.model.flashcard.SetOfFlashcardSets;
 import seedu.bagel.model.flashcard.exceptions.DuplicateFlashcardException;
 import seedu.bagel.testutil.FlashcardBuilder;
 
@@ -96,6 +97,11 @@ public class BagelTest {
         @Override
         public ObservableList<Flashcard> getFlashcardList() {
             return flashcards;
+        }
+
+        @Override
+        public SetOfFlashcardSets getSetOfFlashcardSets() {
+            return null;
         }
     }
 
